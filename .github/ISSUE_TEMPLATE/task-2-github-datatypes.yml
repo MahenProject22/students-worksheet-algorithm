@@ -40,7 +40,7 @@ body:
     id: git_evidence
     attributes:
       label: Git terminal evidence
-      description: Paste the text output of `git remote -v` and `git log --oneline` (at least three commits). Hide anything private.
+      description: Paste the text output of `git remote -v` and `git log --oneline main..task-2` (at least three commits). Hide anything private.
       render: shell
     validations:
       required: true

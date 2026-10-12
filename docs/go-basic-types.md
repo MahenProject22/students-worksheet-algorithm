@@ -88,7 +88,7 @@ fmt.Printf("%.2f\n", mass)   // 62.50  (two decimals)
 
 Key points:
 
-- Floating-point numbers are stored in binary, so some decimals are approximate. `0.1 + 0.2` is **not exactly** `0.3`. Never test two `float64` values for exact equality; compare their difference to a small tolerance instead.
+- Floating-point numbers are stored in binary, so some decimals are approximate. with variables, `x, y := 0.1, 0.2` makes `x + y` print `0.30000000000000004` and `x + y == 0.3` is `false`. (Typing `0.1 + 0.2` directly prints `0.3` because Go computes constants exactly.) Never test two `float64` values for exact equality; compare their difference to a small tolerance instead.
 - `%` does not work on floats.
 - Use `float64` unless you have a specific reason to use `float32`.
 
@@ -229,9 +229,11 @@ Go **never converts types for you** when numbers meet.
 ```go
 a, b := 7, 2
 // ratio := a / b       // 3 (integer division)
-// bad := a * 1.5       // compile error: mismatched types int and float64
+// bad := a * 1.5       // compile error: 1.5 (untyped float constant) truncated to int
+// x := 1.5; bad := a * x // compile error: mismatched types int and float64
 ratio := float64(a) / float64(b) // 3.5
-whole := int(3.9)                // 3  (truncated, NOT rounded)
+f := 3.9
+whole := int(f)                  // 3  (truncated, NOT rounded)
 ```
 
 Converting between numbers and strings uses the `strconv` package:

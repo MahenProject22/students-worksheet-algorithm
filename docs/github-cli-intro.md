@@ -99,7 +99,7 @@ git remote add upstream https://github.com/shiddiqeuy/students-worksheet-algorit
 git remote -v
 ```
 
-`origin` is your fork; `upstream` is the original. Later, if the instructor adds fixes, you can get them with:
+`origin` is your fork; `upstream` is the original. Later, if the instructor adds fixes, switch to `main` first (`git switch main`) and get them with:
 
 ```bash
 git fetch upstream
@@ -149,8 +149,10 @@ Think of **staging** (`git add`) as putting items in a box and **committing** as
 Check your history:
 
 ```bash
-git log --oneline
+git log --oneline main..task-2
 ```
+
+`main..task-2` means "commits on `task-2` that are not on `main`", so you see only your own work.
 
 Make **small commits**: one per finished exercise.
 
@@ -179,7 +181,7 @@ Copy the terminal output (or take a screenshot) for each item, and put it in you
 1. `git --version` and `go version`
 2. `git remote -v` (shows `origin` pointing to **your** fork)
 3. `git status` showing a changed file, before committing
-4. `git log --oneline` showing at least **three** commits
+4. `git log --oneline main..task-2` showing at least **three** commits (this lists only *your* commits, not the instructor's history)
 5. `go run main.go` output of your finished exercise
 
 Hide any private information before sharing a screenshot.

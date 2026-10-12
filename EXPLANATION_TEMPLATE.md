@@ -22,7 +22,7 @@ For each exercise you completed, copy and fill in this mini-report:
 
 ## Task 2 — GitHub CLI and Go basic types
 - **Fork URL and branch:** TODO
-- **Git evidence (`git remote -v`, `git log --oneline`, at least 3 commits):** TODO
+- **Git evidence (`git remote -v`, `git log --oneline main..task-2`, at least 3 commits):** TODO
 - **Program output (`go run main.go`):** TODO
 - **Normal test (inputs and result):** TODO
 - **Boundary test (inputs and result):** TODO

@@ -44,7 +44,7 @@ Task 2 teaches the Git workflow in the terminal and the Go building blocks you n
 
 | Part | Guide | What you do | Evidence |
 |---|---|---|---|
-| A | [GitHub CLI intro](docs/github-cli-intro.md) | Fork, clone, branch, commit, push, submit | `git remote -v`; `git log --oneline` with ≥ 3 commits |
+| A | [GitHub CLI intro](docs/github-cli-intro.md) | Fork, clone, branch, commit, push, submit | `git remote -v`; `git log --oneline main..task-2` with ≥ 3 commits |
 | B | [Go basic types, constants and operators](docs/go-basic-types.md) | Complete [student/10_task2_types/main.go](student/10_task2_types/main.go) | `go run main.go` output matches the guide |
 
 **Submit Task 2** with the **[Task 2 issue form](https://github.com/shiddiqeuy/students-worksheet-algorithm/issues/new/choose)** (*Task 2 — GitHub CLI and Go Basic Types*): your fork URL, branch name, terminal evidence, and a two-sentence reflection. Add a Task 2 section to your `EXPLANATION.md` answering the five questions in the Go guide.
