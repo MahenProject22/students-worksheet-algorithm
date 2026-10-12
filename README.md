@@ -20,7 +20,9 @@ This repository is the **official student worksheet and starter-code home** for 
 
 **Important:** Each folder contains its own `main.go`. Run one folder at a time. No Go module or external dependencies are required for the starter exercises.
 
-## Nine labs
+## Task 1 — Nine Go labs
+
+The nine labs below form **Task 1**. Submit them with the *Go Lab Submission* issue form.
 
 | Lab | Topic | Level | Acceptance evidence |
 |---|---|---|---|
@@ -36,9 +38,22 @@ This repository is the **official student worksheet and starter-code home** for 
 
 **Note:** Instruction sequencing (order of execution), number-sequence generation, and genetic algorithms are **three different concepts**. The four-bit lab is only a demonstration of GA operators, not a complete evolutionary optimizer.
 
+## Task 2 — GitHub CLI and Go basic types
+
+Task 2 teaches the Git workflow in the terminal and the Go building blocks you need before the labs get harder: `int`, `float64` (real numbers), `bool`, `string`, `rune`/`byte` (characters), constants and operators.
+
+| Part | Guide | What you do | Evidence |
+|---|---|---|---|
+| A | [GitHub CLI intro](docs/github-cli-intro.md) | Fork, clone, branch, commit, push, submit | `git remote -v`; `git log --oneline` with ≥ 3 commits |
+| B | [Go basic types, constants and operators](docs/go-basic-types.md) | Complete [student/10_task2_types/main.go](student/10_task2_types/main.go) | `go run main.go` output matches the guide |
+
+**Submit Task 2** with the **[Task 2 issue form](https://github.com/shiddiqeuy/students-worksheet-algorithm/issues/new/choose)** (*Task 2 — GitHub CLI and Go Basic Types*): your fork URL, branch name, terminal evidence, and a two-sentence reflection. Add a Task 2 section to your `EXPLANATION.md` answering the five questions in the Go guide.
+
+**Rubric (10 pts):** program output 3 · Git workflow evidence 2 · tests (normal, edge, invalid) 2 · explanation of types and operators 3.
+
 ## How to submit
 
-- Submit the **link to your fork** by opening a [GitHub Issue](https://github.com/shiddiqeuy/students-worksheet-algorithm/issues/new/choose) here (select *Go Lab Submission*). Keep this original repository clean; student work belongs in forks.
+- Submit the **link to your fork** by opening a [GitHub Issue](https://github.com/shiddiqeuy/students-worksheet-algorithm/issues/new/choose) here (select *Go Lab Submission* for Task 1, or *Task 2 — GitHub CLI and Go Basic Types* for Task 2). Keep this original repository clean; student work belongs in forks.
 - In your fork, include completed Go files, `EXPLANATION.md`, and terminal evidence for **at least three labs**, plus a normal test and an edge/invalid case.
 - Be ready for a **two-minute individual mini-defense in English**: What are the inputs? Why those data types? Why that operation order? What case would break?
 - This repository is public. **Do not post student ID numbers, private contact details, grades, or other sensitive information** in issues or commits. Use the university LMS if formal identity verification is needed.
