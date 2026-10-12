@@ -1,0 +1,75 @@
+name: Task 2 — GitHub CLI and Go Basic Types
+description: Submit your Task 2 work (Git workflow in the terminal + Go types, constants and operators).
+title: "[Task 2] GitHub CLI and Go types — "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Public repository:** Do not include student ID numbers, grades, passwords, tokens or private contact details. Submit the link to **your own fork**, not files in this teaching repository.
+
+        Guides: [GitHub CLI intro](https://github.com/shiddiqeuy/students-worksheet-algorithm/blob/main/docs/github-cli-intro.md) · [Go basic types](https://github.com/shiddiqeuy/students-worksheet-algorithm/blob/main/docs/go-basic-types.md)
+  - type: input
+    id: fork
+    attributes:
+      label: GitHub fork URL
+      description: Link to your own fork containing your Task 2 work.
+      placeholder: https://github.com/your-handle/students-worksheet-algorithm
+    validations:
+      required: true
+  - type: input
+    id: branch
+    attributes:
+      label: Branch name
+      description: The branch in your fork that holds the work.
+      placeholder: task-2
+    validations:
+      required: true
+  - type: checkboxes
+    id: concepts
+    attributes:
+      label: Concepts covered in my Go program
+      options:
+        - label: int (quotient and remainder)
+        - label: float64 (converted before dividing)
+        - label: bool (comparison and &&)
+        - label: string (concatenation and len)
+        - label: rune / byte (character as a number)
+        - label: const (including the reassignment error I observed)
+  - type: textarea
+    id: git_evidence
+    attributes:
+      label: Git terminal evidence
+      description: Paste the text output of `git remote -v` and `git log --oneline main..task-2` (at least three commits). Hide anything private.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: run_evidence
+    attributes:
+      label: Program output
+      description: Paste the output of `go run main.go` for your finished exercise.
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: reflection
+    attributes:
+      label: Two-sentence reflection
+      description: Explain one type or operator mistake you made (or avoided) and one test you ran (normal, edge or invalid).
+      placeholder: "I first wrote a / b and got 3 instead of 3.5, so I converted with float64(). My edge test was ..."
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission checklist
+      options:
+        - label: I worked in my own fork on a branch (not the instructor's main).
+          required: true
+        - label: My fork includes the completed student/10_task2_types/main.go and EXPLANATION.md.
+          required: true
+        - label: gofmt and go vet pass on my code.
+          required: true
+        - label: My issue and repository contain no private student information.
+          required: true
