@@ -162,6 +162,63 @@ Change second bit 0 → 1: 1110    fitness = 3
 
 [Go starter](student/09_bonus_ga_loop/main.go)
 
+## Task 2 — Fill in the blank
+
+Practice for [GitHub CLI intro](docs/github-cli-intro.md) and [Go basic types](docs/go-basic-types.md). Replace every `____` with the missing word, symbol or value. **Predict first, then check** each Go answer by running it. Write your answers in your fork's `EXPLANATION.md` under *Task 2 — Fill in the blank*. Answers are not published here.
+
+### A — Git and GitHub (terminal)
+
+**Word bank:** `add` · `clone` · `diff` · `fork` · `main` · `origin` · `push` · `status` · `switch`
+
+1. A ____ is your own online copy of someone else's repository.
+2. `git ____ <url>` downloads a repository to your computer.
+3. `git ____ -c task-2` creates a new branch and moves you onto it.
+4. `git ____` lists the files you changed, and `git ____` shows the exact lines you added or removed.
+5. `git ____ student/10_task2_types/main.go` puts a file in the box before you seal it with `git commit`.
+6. `git ____ -u origin task-2` sends your commits to your fork on GitHub.
+7. `git log --oneline ____..task-2` lists only the commits you made on your branch.
+8. The remote that points to **your** fork is normally called ____.
+
+### B — Go types, constants and operators
+
+9. `7 / 2` is ____ because both numbers are ____ values, so the fraction is dropped.
+10. `7 % 2` is ____. The `%` operator gives the ____ of a division.
+11. `float64(7) / float64(2)` is ____. Go does **not** convert types ____ (automatically).
+12. Go has no `char` type. A single character is stored as a ____ (or as a ____ for one ASCII byte).
+13. A student ID such as `"00123"` should be a ____ because we never do arithmetic on it and the leading ____ must stay.
+14. The keyword for a value that can never change is ____. Reassigning it gives a ____ error.
+15. `true && false` is ____, `true || false` is ____, and `!true` is ____.
+16. In `x > 0 && y % x == 0`, when `x` is `0` the right side is ____ evaluated, so the program does not divide by zero.
+17. In Go, `=` ____ a value and `==` ____ two values.
+18. `2 + 3 * 4` is ____ but `(2 + 3) * 4` is ____.
+19. With `x, y := 0.1, 0.2`, the expression `x + y == 0.3` is ____ because `float64` stores some decimals only ____.
+20. `string(65)` gives ____, so use `strconv.____(65)` when you want the text `"65"`.
+
+### C — Complete the program
+
+```go
+package main
+
+import "fmt"
+
+____ taxRate = 0.1
+
+func main() {
+	price := 20000.0
+	qty := 3
+	subtotal := price * ____(qty)
+	total := subtotal + subtotal*taxRate
+	isBig := total ____ 50000
+	fmt.Println(total, isBig)
+}
+```
+
+21. Fill the three blanks so the program compiles: ____ , ____ , ____ .
+22. Before running, predict the output: ____ ____
+23. Which line would stop the program from compiling if you removed the conversion blank? Explain in one sentence: ____
+
+**Check:** run it with `go run main.go`, then `gofmt -l .` and `go vet main.go` should print nothing.
+
 ## Submission & mini-defense
 
 Submit the link to **your fork**, not just a screenshot, through [the submission issue form](https://github.com/shiddiqeuy/students-worksheet-algorithm/issues/new/choose). Add `EXPLANATION.md` and terminal evidence for at least three labs in your fork. Do not post personal student IDs in this public repository.
