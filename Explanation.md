@@ -140,12 +140,4 @@
 - **Part B (questions 9-20):** 9. `3`, `int`; 10. `1`, remainder; 11. `3.5`, automatically; 12. `rune`, `byte`; 13. `string`, zeros; 14. `const`, compile-time; 15. `false`, `true`, `false`; 16. not; 17. assigns, compares; 18. `14`, `20`; 19. `false`, approximately; 20. `"A"`, `Itoa`.
 - **Part C (questions 21-23):** 21. `const`, `float64`, `>`; 22. `66000 true`; 23. `subtotal := price * qty` would not compile because Go does not allow multiplying a `float64` by an `int` without converting one operand.
 
-### My mini-defense (2 minutes)
-1. I used integers for counts and whole-number calculations, `float64` for measurements and prices with decimals, `bool` for a yes/no result, and `string` for text and IDs whose leading zeros matter.
-2. I calculated intermediate values before using them: subtotal before discount, Earth weight before Mars weight, and each sequence value before the next one. I also validated positive inputs before checking divisibility.
-3. The terminal problem I encountered was an incorrect/incomplete folder path, not a calculation bug. Correcting the path let PowerShell find the Go files.
-4. A genetic algorithm uses random candidates and probabilistic mutation, so a limited run can miss the optimum. Mutation can also reduce fitness.
-
 **Terminal evidence (text):** The outputs for Exercises 01, 03, and Task 2 are recorded above. Exercise 09's run reached fitness 4 at generation 7; its output may vary because the search is random. Add screenshots from your own terminal if your instructor requires screenshots.
-
-> Predict first. Run second. Explain third.
