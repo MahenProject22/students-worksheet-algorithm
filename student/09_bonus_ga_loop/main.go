@@ -1,4 +1,3 @@
-
 package main
 
 import (
@@ -12,7 +11,6 @@ const (
 	maxGenerations = 10
 	mutationRate   = 0.1
 )
-
 
 func fitness(candidate string) int {
 	count := 0
@@ -38,27 +36,25 @@ func randomCandidate() string {
 	return string(candidate)
 }
 
-
 func selectParent(population []string) string {
 	a := population[rand.Intn(len(population))]
 	b := population[rand.Intn(len(population))]
 
-	if fitness(a) >= fitness(b) {
+	if fitness(a) >= ____ { // prefer the fitter candidate
 		return a
 	}
 	return b
 }
 
 func crossover(parent1, parent2 string) string {
-	return parent1[:2] + parent2[2:]
+	return parent1[:____] + parent2[____:] // keep part of each parent
 }
-
 
 func mutate(candidate string) string {
 	bits := []byte(candidate)
 
 	for i := 0; i < len(bits); i++ {
-		if rand.Float64() < mutationRate {
+		if rand.Float64() < ____ { // mutate only sometimes
 			if bits[i] == '0' {
 				bits[i] = '1'
 			} else {
@@ -71,19 +67,17 @@ func mutate(candidate string) string {
 }
 
 func main() {
-	
+
 	population := make([]string, populationSize)
 
 	for i := 0; i < populationSize; i++ {
 		population[i] = randomCandidate()
 	}
 
-	
 	for generation := 1; generation <= maxGenerations; generation++ {
 		bestFitness := 0
 		bestCandidate := ""
 
-	
 		for _, candidate := range population {
 			score := fitness(candidate)
 
@@ -100,12 +94,11 @@ func main() {
 			bestFitness,
 		)
 
-		if bestFitness == chromosomeSize {
+		if bestFitness == ____ { // stop when every bit is 1
 			fmt.Println("Optimal solution found!")
 			break
 		}
 
-	
 		newPopulation := make([]string, populationSize)
 
 		for i := 0; i < populationSize; i++ {

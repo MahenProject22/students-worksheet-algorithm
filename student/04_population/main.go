@@ -1,13 +1,12 @@
-
 package main
 
 import "fmt"
 
 func main() {
-    start, births, arrivals, deaths, departures := 1000, 20, 5, 10, 4
+	start, births, arrivals, deaths, departures := 1000, 20, 5, 10, 4
 
-    end := start + births + arrivals - deaths - departures
+	// final = initial + births + arrivals - deaths - departures
+	end := ____ + births + ____ - deaths - ____
 
-
-    fmt.Println("Population:", end)
+	fmt.Println("Population:", end)
 }
