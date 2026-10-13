@@ -14,7 +14,7 @@ This repository is the **official student worksheet and starter-code home** for 
 2. **Fork** this repository into your own GitHub account (do not edit the instructor's main branch).
 3. Clone your fork and open it in VS Code. Check Go with `go version`.
 4. Open one lab folder, e.g. `cd student/01_data_types`, and run `go run main.go`.
-5. Complete the `TODO` sections, predict the output, test it, and format with `gofmt -w main.go`.
+5. Fill in each `____` blank, predict the output, test it, and format with `gofmt -w main.go`.
 6. Copy **[EXPLANATION_TEMPLATE.md](EXPLANATION_TEMPLATE.md)** to `EXPLANATION.md` in your fork and document your reasoning.
 7. Commit and push your solutions to your fork. Then open a **[Submission Issue](https://github.com/shiddiqeuy/students-worksheet-algorithm/issues/new/choose)** in *this* repository with your fork link. The issue form is provided for you.
 
@@ -23,6 +23,8 @@ This repository is the **official student worksheet and starter-code home** for 
 ## Task 1 — Nine Go labs
 
 The nine labs below form **Task 1**. Submit them with the *Go Lab Submission* issue form.
+
+Each starter in `student/` is a **fill-in-the-blank**: replace every `____` with the missing expression and the program compiles and runs. Blanks are small (2 to 5 per lab), so predict the output first, then check it against the table.
 
 | Lab | Topic | Level | Acceptance evidence |
 |---|---|---|---|

@@ -11,7 +11,7 @@
 1. Fork [this teaching repository](https://github.com/shiddiqeuy/students-worksheet-algorithm).
 2. Work in your personal fork.
 3. Enter an exercise directory, e.g. `cd student/01_data_types`.
-4. Run `go run main.go`. Fill in each `TODO`, then run again.
+4. Each starter is a **fill-in-the-blank**: replace every `____` in `main.go`. The program will not compile until every blank is filled. Then run `go run main.go`.
 5. Use `gofmt -w main.go` and make a small commit for each completed exercise.
 
 ### 01 — Campus Festival Registration: What is your data?
@@ -25,6 +25,8 @@
 **Explain:** Why is a student ID not a number even when it contains digits? What errors could happen if you treated it as an `int`?
 
 **Reflection:** *Choosing a type is choosing which operations make sense.*
+
+**Fill in the blank (4 blanks):** give `age`, `mass`, `checkedIn` and `studentID` their values. Use the type named in each comment; the student ID needs quotes.
 
 [Go starter](student/01_data_types/main.go)
 
@@ -45,6 +47,8 @@ Total: 31000
 
 **Reflection:** *The right calculation in the wrong order may still lead to the wrong decision.*
 
+**Fill in the blank (3 blanks):** the two factors of the subtotal, and the total after the discount.
+
 [Go starter](student/02_cafe_sequence/main.go)
 
 ### 03 — Equal Volunteer Teams: Can everyone fit?
@@ -62,6 +66,8 @@ Total: 31000
 
 **Explain:** Why is checking `x > 0` *before* modulo essential?
 
+**Fill in the blank (3 blanks):** the two conditions that make the input invalid, and the expression that is `true` when `x` divides `y`.
+
 [Go starter](student/03_factor_checker/main.go)
 
 ### 04 — Population Dashboard: A model is a simplification
@@ -75,6 +81,8 @@ Total: 31000
 **Explain:** What does a negative result imply about the data or model? Which quantities cannot reasonably be negative?
 
 **Reflection:** *A useful mathematical model is not the whole of reality; its assumptions matter.*
+
+**Fill in the blank (3 blanks):** the three missing terms of `final = initial + births + arrivals - deaths - departures`.
 
 [Go starter](student/04_population/main.go)
 
@@ -92,6 +100,8 @@ Total: 31000
 
 **Explain:** How is *generating a number sequence* different from *executing instructions sequentially*? Optional: implement the same rule with a `for` loop.
 
+**Fill in the blank (4 blanks):** the four missing terms. Each new number is the sum of the previous two.
+
 [Go starter](student/05_number_sequence/main.go)
 
 ### 06 — Gravity on Mars: Why units matter
@@ -108,6 +118,8 @@ Mars: 260.7 N
 ```
 
 **Explain:** Why is the input measured in kg while the output is in newtons (N)? Why use `float64`?
+
+**Fill in the blank (2 blanks):** the gravity that turns mass into Earth weight, and the weight that the Mars factor scales.
 
 [Go starter](student/06_gravity/main.go)
 
@@ -132,6 +144,8 @@ Change second bit 0 → 1: 1110    fitness = 3
 
 **Reflection:** *Evolution changes candidates; the objective function defines what counts as better.*
 
+**Fill in the blank (3 blanks):** the character that marks a one-bit, the cut position for crossover, and the new bit for the mutation.
+
 [Go starter](student/07_genetic_intro/main.go)
 
 ### 08 — Cube-root Check: A precise rule
@@ -148,6 +162,8 @@ Change second bit 0 → 1: 1110    fitness = 3
 
 **Explain:** Why can a negative number have a negative cube? What happens for very large integers?
 
+**Fill in the blank (3 blanks):** the cube expression, then the value printed in the `if` branch and in the `else` branch.
+
 [Go starter](student/08_cube_root/main.go)
 
 ### 09 — Advanced Bonus: Evolve a population
@@ -159,6 +175,8 @@ Change second bit 0 → 1: 1110    fitness = 3
 **Acceptance:** Include an explicit generation limit or other stopping condition. Explain why the algorithm **does not guarantee** finding `1111` within a chosen budget.
 
 **Explain:** Why might random exploration help? How could it make a candidate worse?
+
+**Fill in the blank (5 blanks):** the two crossover cut positions, the value `selectParent` compares against, the mutation probability, and the fitness at which the search stops.
 
 [Go starter](student/09_bonus_ga_loop/main.go)
 

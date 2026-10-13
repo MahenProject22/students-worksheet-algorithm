@@ -3,12 +3,12 @@ package main
 import "fmt"
 
 func main() {
-    first, second := 5, 3
+	first, second := 5, 3
 
-    third := first + second
-    fourth := second + third
-    fifth := third + fourth
-.
-    fmt.Println(third, fourth, fifth)
+	// Each new number is the sum of the previous two.
+	third := ____ + second
+	fourth := second + ____
+	fifth := ____ + ____
+
+	fmt.Println(third, fourth, fifth)
 }
-
